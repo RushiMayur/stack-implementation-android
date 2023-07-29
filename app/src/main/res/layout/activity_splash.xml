@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Splash">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:contentDescription="appLogo"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+
+        android:src="@drawable/s" />
+
+    <TextView
+        android:id="@+id/txtFoodLander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAppIcon"
+        android:layout_marginTop="5dp"
+
+
+        android:lines="1"
+        android:padding="5dp"
+        android:text="Stack"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="41dp"
+        android:lines="1"
+        android:maxLines="3"
+        android:padding="5dp"
+
+        android:text="By"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
